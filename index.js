@@ -1,7 +1,7 @@
 let fs = require('fs');
 
 function asciiToByte() {
-    const contents = fs.readFileSync('plaid-first-round.txt', 'utf8');
+    const contents = fs.readFileSync('first-round.txt', 'utf8');
     const split = contents.split('\n');
 
     let arr = [];
@@ -35,7 +35,7 @@ function createAsciiArt() {
         arr[i].fill(0);
     }
 
-    const contents = fs.readFileSync('plaid-first-round.txt', 'utf8');
+    const contents = fs.readFileSync('first-round.txt', 'utf8');
     const split = contents.split('\n');
 
     split.forEach((line) => {
@@ -68,5 +68,5 @@ function createAsciiArt() {
 }
 
 createAsciiArt();
-asciiToByte();
+// asciiToByte();
 // module.exports = { doTheThing };
